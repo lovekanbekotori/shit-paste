@@ -91,14 +91,14 @@ namespace handlers
 
 			if (!G::d3dinit)
 			{
-				ShitPaste::GUI_Init(window, pDevice);
+				shitpaste::GUI_Init(window, pDevice);
 			}
 
 			ImGui_ImplDX9_NewFrame();
 
 			if (g_Options.Menu.Opened)
 			{
-				ShitPaste::mainWindow();
+				shitpaste::mainWindow();
 
 				if (g_Options.Skinchanger.SkinFilter)
 					SkinFilter();

@@ -110,7 +110,7 @@ public:
 						{
 						g_ChatElement->ChatPrintf(0, 0, " ""\x04""[ENEMY]  %s bought %s\n", pinfo.name, gun.c_str());
 						} */
-						G::Msg("[shitpaste] %s bought %s\n", pinfo.name, gun.c_str());
+						G::Msg("[shitpaste.cc] %s bought %s\n", pinfo.name, gun.c_str());
 					}
 				}
 			}

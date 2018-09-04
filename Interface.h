@@ -370,7 +370,7 @@ void initializeskins()
 	}
 }
 
-namespace ShitPaste
+namespace shitpaste
 {
 	ImFont* fDefault;
 	ImFont* fkek2;
@@ -1301,10 +1301,10 @@ namespace ShitPaste
 						{
 							NameChanger::SetName("\n\xAD\xAD\xAD");
 						}
-						if (ImGui::Button("shit paste Name"))
+						if (ImGui::Button("shitpaste Name"))
 						{
-							static char nameShitPaste[11] = "shit paste";
-							NameChanger::SetName(std::string(nameShitPaste).c_str());
+							static char nicknameshitpaste[11] = "shitpaste";
+							NameChanger::SetName(std::string(nicknameshitpaste).c_str());
 						}
 
 					}ImGui::EndChild();
