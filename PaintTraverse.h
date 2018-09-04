@@ -102,7 +102,7 @@ void __fastcall hkPaintTraverse(PVOID pPanels, int edx, unsigned int vguiPanel, 
 			}
 		}
 		if (!Interfaces::g_Engine->IsInGame()) {
-			g_Options.Misc.nameShitPaste = false;
+			g_Options.Misc.nameshitpaste = false;
 			g_Options.Misc.spammeron = false;
 		}
 	}

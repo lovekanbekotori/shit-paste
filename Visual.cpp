@@ -1,29 +1,3 @@
-#include "Render.h"
-#include "namespammer.h"
-
-
-int NameChanger::changes = -1;
-
-
-std::string NameChanger::GetName()
-{
-	player_info_t playerInfo;
-	Interfaces::g_Engine->GetPlayerInfo(Interfaces::g_Engine->GetLocalPlayer(), &playerInfo);
-	return std::string(playerInfo.name);
-}
-
-
-void NameChanger::SetName(const char* name)
-{
-	ConVar* cvar_name = Interfaces::g_CVar->FindVar("name");
-	*(int*)((uintptr_t)&cvar_name->fnChangeCallback + 0xC) = 0;
-	cvar_name->SetValue(name);
-}
-
-
-
-
-
 
 
 
